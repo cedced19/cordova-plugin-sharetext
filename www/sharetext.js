@@ -5,6 +5,6 @@ module.exports = function(message,title,success,error){
   if(typeof title !== "string") {
     title = "Share";
   }
-  cordova.exec(success,error,"Sharetext","sharetext",[message,title,mimetype]);
+  cordova.exec(console.log,console.log,"Sharetext","sharetext",[message,title]);
   return true;
 };

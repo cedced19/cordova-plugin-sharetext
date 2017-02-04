@@ -16,7 +16,7 @@ import android.content.Intent;
 
         @Override
         public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-            if (action.equals("share")) {
+            if (action.equals("sharetext")) {
                 String message = args.getString(0);
                 String title = args.getString(1);
                 this.share(message, title, callbackContext);
