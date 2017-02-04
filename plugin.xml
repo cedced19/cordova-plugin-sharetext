@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="io.github.cedced19.sharetext" version="0.0.0">
+    <name>Sharetext</name>
+    <description>Sharetext</description>
+    <license>MIT</license>
+    <keywords>share,facebook,twitter,whatsapp,gmail,messenger</keywords>
+
+    <js-module src="www/sharetext.js" name="Sharetext">
+        <clobbers target="window.navigator.sharetext" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Share" >
+                <param name="android-package" value="io.github.cedced19.sharetext.Sharetext"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/Sharetext.java" target-dir="src/io/github/cedced19/sharetext" />
+     </platform>
+</plugin>
