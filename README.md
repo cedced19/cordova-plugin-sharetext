@@ -10,9 +10,9 @@ In your phonegap/cordova project, type:
 
 ### Usage
 
-`navigator.share(text,title)`
+`sharetext(message,title)`
 
-1. text: Text to share, i.e. "Incredible plugin"
+1. massage: Text to share, i.e. "Incredible plugin"
 2. title: Title of popup, i.e. "Share this quote" (android only, default: "Share")
 
 ### Created thanks to the code from
